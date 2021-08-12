@@ -14,6 +14,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.SignalR;
+using chat.Server.Hubs;
 
 namespace chat
 {
@@ -29,7 +31,7 @@ namespace chat
         {
             services.AddCors();
             services.AddControllers();
-
+            services.AddSignalR(options => { options.MaximumReceiveMessageSize = null;options.EnableDetailedErrors = true; });
             services.AddMvc(x => x.EnableEndpointRouting = false);
 
             services.AddDbContext<ChatContext>(options => options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
@@ -69,7 +71,9 @@ namespace chat
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Credit.API v1"));
             }
-           var data=  _context.WebSites.Select(x => x.WebSiteName).ToArray(); ;
+        
+          
+            var data=  _context.WebSites.Select(x => x.WebSiteName).ToArray(); ;
             
     
             app.UseCors(x => x.WithOrigins(data).AllowAnyMethod().AllowAnyHeader());
@@ -82,7 +86,8 @@ namespace chat
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers()
-                .RequireAuthorization();
+                .RequireAuthorization(); 
+                endpoints.MapHub<ChatHub>("/chathub");
             });
         }
     }

@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\T480_Home\\Source\\Repos\\chat-api\\chat\\chat.csproj": {}
+    "C:\\Users\\CORNELIUS\\source\\repos\\chat-api\\chat\\chat.csproj": {}
   },
   "projects": {
-    "C:\\Users\\T480_Home\\Source\\Repos\\chat-api\\chat\\chat.csproj": {
+    "C:\\Users\\CORNELIUS\\source\\repos\\chat-api\\chat\\chat.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\T480_Home\\Source\\Repos\\chat-api\\chat\\chat.csproj",
+        "projectUniqueName": "C:\\Users\\CORNELIUS\\source\\repos\\chat-api\\chat\\chat.csproj",
         "projectName": "chat",
-        "projectPath": "C:\\Users\\T480_Home\\Source\\Repos\\chat-api\\chat\\chat.csproj",
-        "packagesPath": "C:\\Users\\T480_Home\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\T480_Home\\Source\\Repos\\chat-api\\chat\\obj\\",
+        "projectPath": "C:\\Users\\CORNELIUS\\source\\repos\\chat-api\\chat\\chat.csproj",
+        "packagesPath": "C:\\Users\\CORNELIUS\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\CORNELIUS\\source\\repos\\chat-api\\chat\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\T480_Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\CORNELIUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "http://172.16.31.10/nugetserver/nuget": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -51,6 +51,14 @@
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[5.0.9, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
+            "Microsoft.AspNetCore.SignalR.Core": {
+              "target": "Package",
+              "version": "[1.1.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -107,7 +115,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -56,6 +56,7 @@ namespace chat.Controller
 
                 };
                 _context.WebSites.Add(data);
+                _context.SaveChanges();
                 return data;
             }
             var rdata = _context.WebSites.Where(x => x.Id == model.Id).FirstOrDefault();
@@ -155,7 +156,7 @@ namespace chat.Controller
             _context.SaveChanges();
             return rdata;
         }
-        [HttpGet("GetAllTopic/{id}")]
+        [HttpGet("GetTopicById/{id}")]
         public ActionResult<dynamic> getTopic(Guid id)
         {
             var d = _context.MessageTopics.Where(x=>x.WebSiteId==id).Select(x => new
@@ -164,7 +165,21 @@ namespace chat.Controller
                 WebSiteId = x.WebSite.Id,
                 x.RiderMail,
                 x.RiderName,
+                Date=x.CreateDate.ToString("dd-MMM-yyyy")
 
+            }).ToList();
+            return d;
+        }
+
+        [HttpGet("GetMessageById/{id}")]
+        public ActionResult<dynamic> getMessage(Guid id)
+        {
+            var d = _context.MessageContents.Where(x => x.MessageTopicId == id).Select(x => new
+            {
+                x.IsRead,
+                x.Content,
+                x.IsCustomer,
+                 Date= x.CreateDate.ToString("dd-MMM-yyyy")
 
             }).ToList();
             return d;
