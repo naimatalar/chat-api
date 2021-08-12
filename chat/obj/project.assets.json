@@ -4832,23 +4832,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\CORNELIUS\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\T480_Home\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\CORNELIUS\\source\\repos\\chat\\chat\\chat.csproj",
+      "projectUniqueName": "C:\\Users\\T480_Home\\Source\\Repos\\chat-api\\chat\\chat.csproj",
       "projectName": "chat",
-      "projectPath": "C:\\Users\\CORNELIUS\\source\\repos\\chat\\chat\\chat.csproj",
-      "packagesPath": "C:\\Users\\CORNELIUS\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\CORNELIUS\\source\\repos\\chat\\chat\\obj\\",
+      "projectPath": "C:\\Users\\T480_Home\\Source\\Repos\\chat-api\\chat\\chat.csproj",
+      "packagesPath": "C:\\Users\\T480_Home\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\T480_Home\\Source\\Repos\\chat-api\\chat\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\CORNELIUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\T480_Home\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4856,7 +4857,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "http://172.16.31.10/nugetserver/nuget": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4938,7 +4938,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }
