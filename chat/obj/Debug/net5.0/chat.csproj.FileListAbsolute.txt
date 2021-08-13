@@ -140,3 +140,8 @@ C:\Users\CORNELIUS\source\repos\chat-api\chat\obj\Debug\net5.0\ref\chat.dll
 C:\Users\CORNELIUS\source\repos\chat-api\chat\obj\Debug\net5.0\chat.pdb
 C:\Users\CORNELIUS\source\repos\chat-api\chat\obj\Debug\net5.0\chat.genruntimeconfig.cache
 C:\Users\CORNELIUS\source\repos\chat-api\chat\bin\Debug\net5.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\T480_Home\source\repos\chat-api\chat\bin\Debug\net5.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\T480_Home\source\repos\chat-api\chat\bin\Debug\net5.0\MailKit.dll
+C:\Users\T480_Home\source\repos\chat-api\chat\bin\Debug\net5.0\MimeKit.dll
+C:\Users\T480_Home\source\repos\chat-api\chat\bin\Debug\net5.0\NETCore.MailKit.dll
+C:\Users\T480_Home\source\repos\chat-api\chat\bin\Debug\net5.0\BouncyCastle.Crypto.dll
